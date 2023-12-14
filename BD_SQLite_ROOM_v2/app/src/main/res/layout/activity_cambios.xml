@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/caja_num_control_cambios"
+        android:layout_width="410dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:hint="caja num Control"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/btn_buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caja_num_control_cambios"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="24dp"
+        android:onClick="buscarAlumno"
+        android:text="Buscar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caja_num_control_cambios" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_buscar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="89dp"
+        android:text="Nombre: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caja_num_control_cambios" />
+
+    <TextView
+        android:id="@+id/textViewPrimerApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNombre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Primer Apellido: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caja_nombre_cambio" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Edad: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Semestre:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/caja_edad_cambios"
+        app:layout_constraintTop_toBottomOf="@+id/caja_segundoAp_cambios" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="21dp"
+        android:text="Carrera:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caja_edad_cambios" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="137dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Segundo Apellido: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caja_apellido_cambio" />
+
+    <Button
+        android:id="@+id/btn_confirmar"
+        android:layout_width="131dp"
+        android:layout_height="79dp"
+        android:layout_below="@+id/textViewEdad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="36dp"
+        android:onClick="confirmarCambios"
+        android:text="Confirmar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caja_carrera_cambios"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="31dp"
+        android:text="Buscar por Número de Control"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/caja_nombre_cambio"
+        android:layout_width="256dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="caja nombre"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textViewNombre"
+        app:layout_constraintTop_toBottomOf="@+id/btn_buscar" />
+
+    <EditText
+        android:id="@+id/caja_apellido_cambio"
+        android:layout_width="248dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="caja primer ap"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textViewPrimerApellido"
+        app:layout_constraintTop_toBottomOf="@+id/caja_nombre_cambio" />
+
+    <EditText
+        android:id="@+id/caja_segundoAp_cambios"
+        android:layout_width="241dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="caja segundo ap"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/caja_apellido_cambio" />
+
+    <EditText
+        android:id="@+id/caja_edad_cambios"
+        android:layout_width="98dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="caja edad"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <EditText
+        android:id="@+id/caja_semestre_cambios"
+        android:layout_width="107dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="jp"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/caja_segundoAp_cambios" />
+
+    <EditText
+        android:id="@+id/caja_carrera_cambios"
+        android:layout_width="244dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="caja carrera"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/caja_semestre_cambios" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
